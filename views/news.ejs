@@ -1,0 +1,10 @@
+<h1>Top 10 Latest News</h1>
+<h2><a href="https://newsapi.org/">Powered by News API</a></h2>
+<ul>
+    <% parsedData.articles.forEach(function(news){ %>
+        <% var newsLink = news.url; %>
+        <li><%= news.title %> : <a href=<%= newsLink %> target="_blank">Read More!</a></li>
+    <% }); %>
+</ul>
+
+<a href="/">Search again!</a>
