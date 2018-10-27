@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var request = require("request");
+var bodyParser = require("body-parser");
 
 app.get("/", function(req, res){
     res.render("search.ejs"); 
